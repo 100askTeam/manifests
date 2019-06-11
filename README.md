@@ -1,31 +1,25 @@
 Buildroot SDK
 ------
 
-# 配置repo
-## 下载repo
-根据您的办公网络情况，从以下链接获取repo工具。
-```
-git clone https://gerrit.googlesource.com/git-repo  (谷歌官方源)
-git clone https://mirrors.tuna.tsinghua.edu.cn/git/git-repo (国内清华源)
-git clone https://gerrit-googlesource.lug.ustc.edu.cn/git-repo (国内中科大源)
-```
-## 配置REPO_URL
-在到构建和谐社会的前提下，需要修改REPO_URL，可参考以下修改：
-
-  vim repo
+# Initialize repo
+## Download  repo
 
 ```
-## REPO_URL = 'https://gerrit-googlesource.proxy.ustclug.org/git-repo'
-REPO_URL = 'https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/'
+git clone https://gerrit.googlesource.com/git-repo
 ```
 
-## 配置好的repo
+# Initialize source code
+
+## 100ask-am335x board
+Get the source code
 ```
-https://git.dev.tencent.com/codebug8/repo.git
+$ mkdir -p 100ask_am335x
+$ cd 100ask_am335x
+$ repo init -u https://github.com/100askTeam/manifests/ -b linux-sdk -m ti335x/100ask-am335x_linux_release_v1.0.xml --no-repo-verify
 ```
-# 初始化仓库 repo init
-## mini437x开发板
-获取源码
+
+## 100ask-am437x borad
+Get the source code
 ```
 $ mkdir -p mini437x
 $ cd mini437x
@@ -45,13 +39,7 @@ $ mkdir -p roc-rk3399
 $ cd roc-rk3399
 $ repo init -u https://dev.tencent.com/u/weidongshan/p/manifests/git -b linux-sdk -m rk3399/roc-rk3399_linux_release.xml --no-repo-verify
 ```
-## ti335x开发板
-获取源码
-```
-$ mkdir -p ti335x
-$ cd ti335x
-$ repo init -u https://dev.tencent.com/u/weidongshan/p/manifests/git -b linux-sdk -m ti335x/ti335x_linux_release.xml --no-repo-verify
-```
+
 
 # 同步代码repo sync
 
