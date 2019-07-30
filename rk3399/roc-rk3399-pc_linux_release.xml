@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote fetch="https://git.dev.tencent.com" name="dev.tencent"/>
+	<remote fetch="https://github.com/" name="github"/>
+		
+	<default  sync-c="true" sync-j="4"/>
+
+        <!-- uboot -->
+        <project remote="github" name="100askTeam/roc-rk3399-pc_uboot" path="uboot-2019.01" revision="master"/>
+        
+	<!-- kernel -->
+        <project remote="github" name="100askTeam/roc-rk3399-pc_kernel" path="linux-4.4" revision="master"/>
+
+        <!-- buildroot -->
+        <project  remote="github"name="100askTeam/roc-rk3399-pc_buildroot" path="buildroot-2018.02" revision="master"/>
+        
+        <!-- ToolChain -->
+        <project  remote="dev.tencent"  name="weidongshan/ToolChain-6.3.1" path="ToolChain" revision="d99023a2d35dd0f3dddc9923eb4c6a5f0a1b5f34" upstream="master"/>
+</manifest>
