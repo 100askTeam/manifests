@@ -38,19 +38,19 @@ $ mkdir -p firefly-rk3288
 $ cd firefly-rk3288
 $ repo init -u https://dev.tencent.com/u/weidongshan/p/manifests/git -b linux-sdk -m rk3288/firefly-rk3288_linux_release.xml --no-repo-verify
 ```
-## roc-rk3399开发板
+## roc-rk3399-pc开发板
 获取源码
 ```
-$ mkdir -p roc-rk3399
-$ cd roc-rk3399
-$ repo init -u https://dev.tencent.com/u/weidongshan/p/manifests/git -b linux-sdk -m rk3399/roc-rk3399_linux_release.xml --no-repo-verify
+$ mkdir -p roc-rk3399-pc
+$ cd roc-rk3399-pc
+$ repo init -u https://github.com/100askTeam/manifests/git -b master -m rk3399/roc-rk3399-pc_linux_release.xml --no-repo-verify
 ```
-## ti335x开发板
+## 100ask_am335x开发板
 获取源码
 ```
-$ mkdir -p ti335x
-$ cd ti335x
-$ repo init -u https://dev.tencent.com/u/weidongshan/p/manifests/git -b linux-sdk -m ti335x/ti335x_linux_release.xml --no-repo-verify
+$ mkdir -p 100ask_am335x
+$ cd 100ask_am335x
+$ repo init -u https://github.com/100askTeam/manifests/git -b master -m ti335x/100ask-am335x_linux_release.xml --no-repo-verify
 ```
 
 # 同步代码repo sync
