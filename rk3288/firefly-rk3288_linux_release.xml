@@ -1,12 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>  
-
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="dev.tencent" fetch="https://git.dev.tencent.com" review="https://git.dev.tencent.com"/>
-	<default revision="master" remote="dev.tencent" sync-c="true" sync-j="4"/>
-	<!-- uboot -->
-  	<project name="weidongshan/firefly-rk3288-uboot" path="uboot2017.09" revision="release"/>
-  	<!-- kernel -->
-	<project name="weidongshan/firefly-rk3288-kernel" path="linux-4.4" revision="master"/>  	
-  	<!-- buildroot -->
-  	<project name="weidongshan/firefly-rk3288-buildroot" path="buildroot" revision="master"/>
-</manifest>	
+	<remote fetch="https://git.dev.tencent.com" name="dev.tencent"/>
+	<remote fetch="https://github.com/" name="github"/>
+		
+	<default  sync-c="true" sync-j="4"/>
+
+        <!-- uboot -->
+        <project remote="github" name="100askTeam/firefly-rk3288-uboot" path="uboot-2017.09" revision="master"/>
+        
+	<!-- kernel -->
+        <project remote="github" name="100askTeam/firefly-rk3288-kernel" path="linux-4.4" revision="master"/>
+
+        <!-- buildroot -->
+        <project  remote="github"name="100askTeam/firefly-rk3288-buildroot" path="buildroot-2018.02" revision="master"/>
+        
+        <!-- ToolChain -->
+        <project  remote="dev.tencent"  name="weidongshan/ToolChain-6.2.1" path="ToolChain" revision="1028bb94b9aa89616f2fd6fcf77dceea4e8b6566" upstream="master"/>
+</manifest>
+
+
+
